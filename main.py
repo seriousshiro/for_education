@@ -90,4 +90,10 @@ def get_data(url):
                 json.dump(product_data, file, indent=4, ensure_ascii=False)
 
 
-get_data('https://www.parsemachine.com/sandbox/catalog/')
+def main():
+    get_data('https://www.parsemachine.com/sandbox/catalog/')
+
+
+if __name__ == '__main__':
+    main()
+
